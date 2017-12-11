@@ -1,0 +1,34 @@
+{
+  "name": "create-mono-app",
+  "version": "0.0.1",
+  "description": "Create a Mono App in seconds",
+  "bin": "cli.js",
+  "files": [
+    "cli.js",
+    "sao.js",
+    "template/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terrajs/create-mono-app.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "minimist": "^1.2.0",
+    "sao": "^0.22.5",
+    "superb": "^2.0.0",
+    "update-notifier": "^2.3.0"
+  },
+  "keywords": [
+    "mono",
+    "mono-app",
+    "create-mono-app"
+  ],
+  "devDependencies": {
+    "ava": "^0.22.0"
+  }
+}
