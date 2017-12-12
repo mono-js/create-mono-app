@@ -43,5 +43,5 @@ module.exports = {
   },
   showTip: true,
   gitInit: true,
-  npmInstall: true
+	npmInstall: true
 }
