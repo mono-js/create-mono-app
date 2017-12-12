@@ -1,7 +1,4 @@
 module.exports = [
-	/*
-	** Example:
-
 	{
 		method: 'GET',
 		path: '/hello',
@@ -9,6 +6,4 @@ module.exports = [
 			res.json({ hello: 'world' })
 		}
 	}
-
-	*/
 ]

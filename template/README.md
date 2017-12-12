@@ -29,7 +29,3 @@ The tests are made with [AVA](https://github.com/avajs/ava), [nyc](https://githu
 ```bash
 npm test
 ```
-
-## License
-
-MIT &copy; <%= username %>

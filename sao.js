@@ -4,23 +4,39 @@ const _ = require('lodash')
 module.exports = {
   prompts: {
     name: {
-      message: 'What is the name of your new Mono module?',
+      message: 'What is the name of your new Mono app?',
 			default: ':folderName:'
     },
     description: {
-      message: 'How would you descripe your Mono module?',
-      default: `${_.capitalize(superb())} module for Mono`
-    },
-    username: {
-      message: 'What is your GitHub username?',
-      default: ':gitUser:'
-    }
+      message: 'How would you descripe your Mono app?',
+      default: `${_.capitalize(superb())} app with Mono`
+		},
+		eslint: {
+      message: 'Do you want to use ESLINT?',
+      type: 'list',
+      choices: ['yes', 'no'],
+      default: 'yes'
+		},
+    mongodb: {
+      message: 'Do you want to use MongoDB in your app?',
+      type: 'list',
+      choices: ['yes', 'no'],
+      default: 'yes'
+		},
+		// documentation: {
+		// 	message: 'Do you want to auto-generate your API documentation?',
+    //   type: 'list',
+    //   choices: ['yes', 'no'],
+    //   default: 'yes'
+		// }
 	},
-	data({ name }) {
-		return {
-			moduleKey: _.camelCase(name.replace(/^mono-/, ''))
-		}
+	data: {
+		documentation: 'no'
 	},
+	filters: {
+    'src/todos/**': 'mongodb === "yes"',
+    '.eslintrc.json': 'eslint === "yes"'
+  },
   move: {
     'gitignore': '.gitignore',
     'pkg.json': 'package.json'

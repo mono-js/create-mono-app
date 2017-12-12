@@ -9,7 +9,7 @@ const argv = minimist(process.argv.slice(2))
 // In a custom directory or current directory
 const targetPath = path.resolve(argv._[0] || '.')
 
-console.log(`> Generating Mono App in ${targetPath}`)
+console.log(`> Generating Mono app in ${targetPath}`)
 
 // See https://sao.js.org/#/advanced/standalone-cli
 sao({
@@ -21,4 +21,4 @@ sao({
 })
 
 // Update notifier
-updateNotifier({ pkg }).notify();
+updateNotifier({ pkg }).notify()
