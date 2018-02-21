@@ -48,4 +48,4 @@ npm test
 
 ## License
 
-MIT &copy; [terrajs](github.com/terrajs)
+MIT &copy; [terrajs](https://github.com/terrajs)
