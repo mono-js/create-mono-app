@@ -2,7 +2,7 @@
 const test = require('ava')
 
 const { join } = require('path')
-const { start, stop, $get<% if (mongodb === 'yes') { %>, $post, $put, $del<% } %> } = require('mono-test-utils')
+const { start, stop, $get<% if (modules.mongodb) { %>, $post, $put, $del<% } %> } = require('mono-test-utils')
 
 let monoContext
 const context = {}
@@ -26,7 +26,7 @@ test('GET /hello => 200', async (t) => {
 	t.is(statusCode, 200)
 	t.deepEqual(body, { hello: 'world' })
 })
-<% if (mongodb === 'yes') { %>
+<% if (modules.mongodb) { %>
 /*
 ** modules/todos/
 */

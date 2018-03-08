@@ -1,6 +1,7 @@
-module.exports = {<% if (mongodb === 'yes') { %>
+module.exports = {
 	mono: {
-		mongodb: {
+		<% if (modules.mongodb) { %>mongodb: {
 			url: 'mongodb://localhost:27017/<%= name %>'
-		}
-	}<% } %>}
+		},<% } %>
+	}
+}
