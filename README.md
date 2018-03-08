@@ -2,6 +2,11 @@
 
 > Create a [Mono](https://github.com/terrajs/mono) app in seconds
 
+<details><summary>Preview</summary>
+
+![preview](https://user-images.githubusercontent.com/904724/37159323-d064b1a6-22ed-11e8-8dd1-98777bfa0b7a.gif)
+</details>
+
 ## Usage
 
 ### Globally
