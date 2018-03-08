@@ -72,6 +72,7 @@ module.exports = {
 		const modules = {}
 		answers.modulesConf = []
 
+		answers.modules = answers.modules || []
 		answers.modules.forEach((name) => {
 			const monoModule = monoModules.find((m) => m.name === name)
 
