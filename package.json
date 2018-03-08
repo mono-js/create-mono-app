@@ -17,9 +17,9 @@
     "test": "ava test/"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.5",
     "minimist": "^1.2.0",
-    "sao": "^0.22.10",
+    "sao": "^0.22.14",
     "superb": "^2.0.0"
   },
   "keywords": [
@@ -28,6 +28,6 @@
     "create-mono-app"
   ],
   "devDependencies": {
-    "ava": "^0.24.0"
+    "ava": "^0.25.0"
   }
 }
