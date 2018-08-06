@@ -17,7 +17,7 @@
   },
   "license": "MIT",
   "dependencies": {
-		"@terrajs/mono": "latest",<% if (modules.mongodb) { %>
+		"mono-core": "latest",<% if (modules.mongodb) { %>
 		"mongodb-utils": "latest",<% } if (modules.doc) { %>
 		"mono-doc": "latest",<% } if (modules.elasticsearch) { %>
 		"mono-elasticsearch": "latest",<% } if (modules.io) { %>
