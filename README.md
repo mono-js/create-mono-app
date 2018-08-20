@@ -1,4 +1,4 @@
-# Create Mono Module
+# Create Mono App
 
 > Create a [Mono](https://github.com/terrajs/mono) app in seconds
 
