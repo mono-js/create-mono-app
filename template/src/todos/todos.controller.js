@@ -1,4 +1,4 @@
-const { HttpError } = require('@terrajs/mono')
+const { HttpError } = require('mono-core')
 const { getFindOptions } = require('mono-mongodb')
 
 const Todos = require('./todos.service')
